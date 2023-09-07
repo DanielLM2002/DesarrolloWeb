@@ -11850,5 +11850,64 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+}
+header .container {
+  padding: 1rem 2rem;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+article .container {
+  padding: 1rem 2rem;
+}
+article .blog-post-header .blog-post-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+article .blog-post-header .blog-post-meta {
+  font-size: 1rem;
+  color: #999;
+}
+article .blog-post-content p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .container {
+  padding: 1rem 2rem;
+}
+
+.container-cost {
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+  background-color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */
