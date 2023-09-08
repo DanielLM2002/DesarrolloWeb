@@ -11871,6 +11871,9 @@ header {
 header .container {
   padding: 1rem 2rem;
 }
+header .navbar {
+  justify-content: center;
+}
 
 main {
   padding: 1rem 2rem;
@@ -11906,8 +11909,15 @@ footer .container {
 .container-cost {
   margin: 0;
   padding: 0;
-  min-height: 90vh;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
+}
+
+.custom-container {
+  max-width: 900px;
 }
 
 /*# sourceMappingURL=styles.css.map */
