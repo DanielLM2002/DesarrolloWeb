@@ -70,8 +70,12 @@ footer {
   color: $secondary-color;
   .container {
     padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
 
 .container-cost {
   margin: 0;
