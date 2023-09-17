@@ -700,7 +700,7 @@ progress {
   height: auto;
 }
 
-.img-thumbnail {
+.img-thumbnail, .imagecont {
   padding: 0.25rem;
   background-color: var(--bs-body-bg);
   border: var(--bs-border-width) solid var(--bs-border-color);
@@ -11850,6 +11850,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.imagecont {
+  max-width: 100px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

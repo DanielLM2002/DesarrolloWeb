@@ -6,7 +6,16 @@ $font-family: sans-serif;
 // Import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
+
 // Mixins
+
+.imagecont {
+  @extend .img-thumbnail;
+  max-width: 100px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
