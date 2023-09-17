@@ -22,6 +22,14 @@ $font-family: sans-serif;
   @extend .img-fluid
 }
 
+.downbut {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+
+}
+
 .imagecont {
   @extend .img-thumbnail;
   max-width: 150px;
