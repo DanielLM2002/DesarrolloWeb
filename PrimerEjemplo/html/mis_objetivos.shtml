@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Blog personal</title>
+    <title>Mis Objetivos</title>
   </head>
   <body>
     <header>
@@ -30,59 +30,67 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-center">
               <li class="nav-item">
-                <a class="nav-link" href="./mis_objetivos.html"
+                <a class="nav-link" href="./mis_objetivos.shtml"
                   >Mis objetivos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./computacion.html">Computación</a>
+                <a class="nav-link" href="./computacion.shtml">Computación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pasatiempos.html">Pasatiempos</a>
+                <a class="nav-link" href="./pasatiempos.shtml">Pasatiempos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./acerca.html">Acerca del sitio</a>
+                <a class="nav-link" href="./acerca.shtml">Acerca del sitio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactame.html">Contáctame</a>
+                <a class="nav-link" href="./contactame.shtml">Contáctame</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="main-container">
-      <section class="container-cost">
+    <main>
+      <div class="container-cost">
         <section class="custom-container">
           <article class="blog-post">
             <header class="blog-post-header">
-              <h1 class="blog-post-title">Proyecto de desarrollo web</h1>
+              <h1 class="blog-post-title">Mis Objetivos</h1>
               <br />
             </header>
             <div class="blog-post-content">
-              <p>Este es mi primer proyecto de desarrollo web.</p>
-              <p>
-                Aquí puedes ver información como mis objetivos, pasatiempos e
-                información de contacto
-              </p>
-              <p>
-                Asi que espero que la página sea de tu agrado y que no
-                experimentes ningún tipo de dificultad con ella.
-              </p>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-md-6">
-                <img
-                  src="../assets/jake.jpg"
-                  class="imagenround"
-                  alt="Responsive image"
-                />
+              <div class="list-group">
+                <a href="#" class="listdecorator">
+                  Graduarme de ING de sofware y poder trabajar en ello
+                  <img
+                    src="../assets/graduacion.jpg"
+                    alt="foto generica de graduacion"
+                    class="imagecont"
+                  />
+                </a>
+                <a href="#" class="listdecorator">
+                  Visitar Jackson Hole en Whyoming y poder visitar Yellowstone
+                  también.
+                  <img
+                    src="../assets/jackson.jpg"
+                    alt="Jackson hole en whyoming"
+                    class="imagecont"
+                  />
+                </a>
+                <a href="#" class="listdecorator">
+                  Mejorar como persona
+                  <img
+                    src="../assets/improvement.jpg"
+                    alt="improvement"
+                    class="imagecont"
+                  />
+                </a>
               </div>
             </div>
-          </div>
           </article>
         </section>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="container">
