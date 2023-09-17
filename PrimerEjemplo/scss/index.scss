@@ -16,6 +16,12 @@ $font-family: sans-serif;
   @extend .justify-content-center;
 }
 
+.imagenround {
+  @extend .rounded;
+  @extend .text-center;
+  @extend .img-fluid
+}
+
 .imagecont {
   @extend .img-thumbnail;
   max-width: 150px;
@@ -106,3 +112,6 @@ footer {
 }
 
 
+.main-container {
+  min-height: 83vh;
+}

@@ -695,7 +695,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid, .imagenround {
   max-width: 100%;
   height: auto;
 }
@@ -8323,7 +8323,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .imagenround {
   text-align: center !important;
 }
 
@@ -8807,7 +8807,7 @@ textarea.form-control-lg {
   pointer-events: auto !important;
 }
 
-.rounded {
+.rounded, .imagenround {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -11859,7 +11859,7 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 
-.text-center {
+.text-center, .imagenround {
   text-align: center;
 }
 
@@ -11924,6 +11924,10 @@ footer .container {
 
 .custom-container {
   max-width: 900px;
+}
+
+.main-container {
+  min-height: 83vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
