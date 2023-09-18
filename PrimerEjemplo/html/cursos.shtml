@@ -18,7 +18,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">Mi página personal</a>
+          <a class="navbar-brand" href="./index.shtml">Mi página personal</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,27 +33,27 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-center">
               <li class="nav-item">
-                <a class="nav-link" href="./mis_objetivos.html"
+                <a class="nav-link" href="./mis_objetivos.shtml"
                   >Mis objetivos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./computacion.html">
+                <a class="nav-link" href="./computacion.shtml">
                   Computación
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pasatiempos.html">
+                <a class="nav-link" href="./pasatiempos.shtml">
                   Pasatiempos
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./acerca.html">
+                <a class="nav-link" href="./acerca.shtml">
                   Acerca
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactame.html">
+                <a class="nav-link" href="./contactame.shtml">
                   Contáctame
                 </a>
               </li>
@@ -70,16 +70,16 @@
                   Otras Páginas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./porque.html"
+                  <a class="dropdown-item" href="./porque.shtml"
                     >Por qué computación</a
                   >
-                  <a class="dropdown-item" href="./cursos.html"
+                  <a class="dropdown-item" href="./cursos.shtml"
                     >Cursos favoritos</a
                   >
-                  <a class="dropdown-item" href="./profes.html"
+                  <a class="dropdown-item" href="./profes.shtml"
                     >Mis profesores y compas</a
                   >
-                  <a class="dropdown-item" href="./descargas.html"
+                  <a class="dropdown-item" href="./descargas.shtml"
                     >Descargas</a
                   >
                 </div>
@@ -94,18 +94,28 @@
         <section class="custom-container">
           <article class="blog-post">
             <header class="blog-post-header">
-              <h1 class="blog-post-title">Por qué computación?</h1>
+              <h1 class="blog-post-title">Cursos favoritos</h1>
               <br />
             </header>
             <div class="blog-post-content">
-                <p>Decidí estudiar computación debido que desde pequeño supe que quería estudiar una ingeniería pero no sabía exactamente cual quería pero con el tiempo preferí irme hacia el lado de la computación debido a mi amor por las máquinas (y mi desprecio hacia la química).</p>
+              <p>Ahora una lista de los mejores cursos que he llevado en la carrera en mi muy humilde opinión
+              </p>
+              <h4>Cursos que he disfrutado:</h4>
+              <ul>
+                <li>IHC</li>
+                <li>Bases de datos</li>
+                <li>Sistemas Operativos</li>
+                <li>PI Inge/Bases</li>
+                <li>Algoritmos</li>
+              </ul>
+              <br>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6">
                 <img
-                  src="../assets/marshall.jpg"
+                  src="../assets/marci.png"
                   class="imagenround"
-                  alt="Marceline witj Jambo"
+                  alt="Finn and Jake by the river"
                 />
               </div>
             </div>

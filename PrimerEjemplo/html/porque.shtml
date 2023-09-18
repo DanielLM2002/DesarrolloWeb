@@ -18,7 +18,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">Mi página personal</a>
+          <a class="navbar-brand" href="./index.shtml">Mi página personal</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,27 +33,27 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-center">
               <li class="nav-item">
-                <a class="nav-link" href="./mis_objetivos.html"
+                <a class="nav-link" href="./mis_objetivos.shtml"
                   >Mis objetivos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./computacion.html">
+                <a class="nav-link" href="./computacion.shtml">
                   Computación
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pasatiempos.html">
+                <a class="nav-link" href="./pasatiempos.shtml">
                   Pasatiempos
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./acerca.html">
+                <a class="nav-link" href="./acerca.shtml">
                   Acerca
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactame.html">
+                <a class="nav-link" href="./contactame.shtml">
                   Contáctame
                 </a>
               </li>
@@ -70,16 +70,16 @@
                   Otras Páginas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./porque.html"
+                  <a class="dropdown-item" href="./porque.shtml"
                     >Por qué computación</a
                   >
-                  <a class="dropdown-item" href="./cursos.html"
+                  <a class="dropdown-item" href="./cursos.shtml"
                     >Cursos favoritos</a
                   >
-                  <a class="dropdown-item" href="./profes.html"
+                  <a class="dropdown-item" href="./profes.shtml"
                     >Mis profesores y compas</a
                   >
-                  <a class="dropdown-item" href="./descargas.html"
+                  <a class="dropdown-item" href="./descargas.shtml"
                     >Descargas</a
                   >
                 </div>
@@ -94,43 +94,18 @@
         <section class="custom-container">
           <article class="blog-post">
             <header class="blog-post-header">
-              <h1 class="blog-post-title">Profesores y compañeros</h1>
+              <h1 class="blog-post-title">Por qué computación?</h1>
               <br />
             </header>
             <div class="blog-post-content">
-              <p>Ahora una lista de los mejores profes que he conocido en la carrera y que me han inspirado a continuar en la carrera y mejorar en ella.
-              </p>
-              <h4>Profes</h4>
-              <ul>
-                <li>Alexandra Martínez</li>
-                <li>Allan Berrocal</li>
-                <li>Jeisson Hidalgo</li>
-                <li>Francisco Arroyo</li>
-                <li>Gustavo Lopez</li>
-              </ul>
-              <br>
-              <p>
-                Tambien he conocido a una gran cantidad de personas que he llegado a admirar y apreciar.
-              </p>
-              <h4>Compañeros</h4>
-              <ul>
-                <li>Esteban</li>
-                <li>Josué</li>
-                <li>Adrián</li>
-                <li>Henry</li>
-                <li>Randy</li>
-                <li>Lisa</li>
-                <li>Mar</li>
-                <li>Israel</li>
-              </ul>
-
+                <p>Decidí estudiar computación debido que desde pequeño supe que quería estudiar una ingeniería pero no sabía exactamente cual quería pero con el tiempo preferí irme hacia el lado de la computación debido a mi amor por las máquinas (y mi desprecio hacia la química).</p>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6">
                 <img
-                  src="../assets/boys.jpg"
+                  src="../assets/marshall.jpg"
                   class="imagenround"
-                  alt="Finn and Jake by the river"
+                  alt="Marceline witj Jambo"
                 />
               </div>
             </div>

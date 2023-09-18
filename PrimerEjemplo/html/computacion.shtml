@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -15,7 +18,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="./index.html">Mi página personal</a>
+          <a class="navbar-brand" href="./index.shtml">Mi página personal</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,21 +33,56 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-center">
               <li class="nav-item">
-                <a class="nav-link" href="./mis_objetivos.html"
+                <a class="nav-link" href="./mis_objetivos.shtml"
                   >Mis objetivos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./computacion.html">Computación</a>
+                <a class="nav-link" href="./computacion.shtml">
+                  Computación
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pasatiempos.html">Pasatiempos</a>
+                <a class="nav-link" href="./pasatiempos.shtml">
+                  Pasatiempos
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./acerca.html">Acerca del sitio</a>
+                <a class="nav-link" href="./acerca.shtml">
+                  Acerca
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactame.html">Contáctame</a>
+                <a class="nav-link" href="./contactame.shtml">
+                  Contáctame
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Otras Páginas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./porque.shtml"
+                    >Por qué computación</a
+                  >
+                  <a class="dropdown-item" href="./cursos.shtml"
+                    >Cursos favoritos</a
+                  >
+                  <a class="dropdown-item" href="./profes.shtml"
+                    >Mis profesores y compas</a
+                  >
+                  <a class="dropdown-item" href="./descargas.shtml"
+                    >Descargas</a
+                  >
+                </div>
               </li>
             </ul>
           </div>
@@ -56,24 +94,21 @@
         <section class="custom-container">
           <article class="blog-post">
             <header class="blog-post-header">
-              <h1 class="blog-post-title">Proyecto de desarrollo web</h1>
+              <h1 class="blog-post-title">Area de Computación</h1>
               <br />
             </header>
             <div class="blog-post-content">
-              <p>Este es mi primer proyecto de desarrollo web.</p>
-              <p>
-                Aquí puedes ver información como mis objetivos, pasatiempos e
-                información de contacto
+              <p>En esta parte de la página podrás ver información relacionada con la carrera.
+              Partes importantes como mis cursos favoritos, profesores, compañeros y por qué escogí estudiarla.
               </p>
               <p>
-                Asi que espero que la página sea de tu agrado y que no
-                experimentes ningún tipo de dificultad con ella.
+                Así que espero que la página sea de tu agrado y puedas verla con facilidad.
               </p>
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6">
                 <img
-                  src="../assets/jake.jpg"
+                  src="../assets/bmo.jpg"
                   class="imagenround"
                   alt="Responsive image"
                 />
