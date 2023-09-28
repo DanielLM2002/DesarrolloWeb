@@ -12,7 +12,7 @@ template.innerHTML = `
             <div class='content'>
                 <h2>Daniel Lizano</h2>
                 <p>
-                    I'm JavaScript full-stack engineer, love working with <em>React</em> and <em>Node.js</em>. 
+                    I'm a JavaScript full-stack engineer, love working with <em>React</em> and <em>Node.js</em>. 
                 </p>
                 <ul class="social-icons">
                     <li>
