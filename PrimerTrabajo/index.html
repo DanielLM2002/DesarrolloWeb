@@ -2,62 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Contador de palabras</title>
+    <title>Tarjeta</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-    <!-- <script>//script de JS para componente vainilla
-      class MiTarjeta {
-        constructor(titulo, contenido) {
-          this.titulo = titulo;
-          this.contenido = contenido;
-        }
-        render() {
-          const tarjetaElement = document.createElement("div");
-          tarjetaElement.classList.add("mi-tarjeta");
-
-          const tituloElement = document.createElement("h2");
-          tituloElement.textContent = this.titulo;
-
-          const contenidoElement = document.createElement("p");
-          contenidoElement.textContent = this.contenido;
-
-          tarjetaElement.appendChild(tituloElement);
-          tarjetaElement.appendChild(contenidoElement);
-
-          const appElement = document.getElementById("app");
-          appElement.appendChild(tarjetaElement);
-        }
-      }
-
-      const miTrajeta = new MiTarjeta(
-        "Titulo de la tarjeta",
-        "Contenido   de la tarjeta"
-      );
-      miTrajeta.render();
-    </script>
-
-    <div id="app">
-      <div class="mi-tarjeta">
-        <h2>Hola</h2>
-        <p>Contenido</p>
-      </div>
-
-      <div class="mi-tarjeta">
-        <h2>hola2</h2>
-        <p>tarjeta 2</p>
-      </div>
+    <h1>Comentarios adicionales</h1>
+    <textarea rows="10" cols="50"></textarea>
+    <div>
+      <span id="count">0</span> Caracteres digitados.
+      <br />
+      <span id="remaining">230</span> Caracteres restantes.
     </div>
+    <script>//script de JS para revisar la cantidad de caracteres
+      const textarea = document.querySelector("textarea");
+      const limit = 230;
 
-    <style>
-      .mi-tarjeta {
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin: 10px;
-        background-color: #f9f9f9;
-      }
-    </style> -->
+      textarea.addEventListener("input", () => {
+        const count = textarea.value.length;
+        const remaining = limit - count;
+
+        if (remaining >= 0) {
+          document.querySelector("#count").textContent = count;
+          document.querySelector("#remaining").textContent = remaining;
+        } else {
+          textarea.value = textarea.value.slice(0, limit);
+          document.querySelector("#count").textContent = limit;
+          document.querySelector("#remaining").textContent = 0;
+        }
+      });
+    </script>
+    
     <script src ="main.js"></script>
     <mi-tarjeta titulo="Titulo de la tarjeta" contenido="Contenido de la tarjeta"></mi-tarjeta>
     
