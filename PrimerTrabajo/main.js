@@ -1,40 +1,8 @@
+// El HTML y CSS le pertencen a Jason Alexander https://github.com/atherosai/ui/tree/main/profile-cards-02
+
 const template = document.createElement("template");
 template.innerHTML = `
-  <link rel="stylesheet" href="../css/style.css">
-  <div class="container">       
-    <article class="card">
-        <div class="background">
-        <img src="../assets/profile.jpg" alt="profile">
-        </div>
-        <div class='content'>
-        <h2>Zack Wilson &#127468;&#127463;</h2>
-        <p>
-            Senior full-stack engineer at 
-            <a href="https://google.com" title="Google">Google</a>
-        </p>
-        <p>Helping with:</p>
-        <ul class="chips">
-            <li class="chip">React.js</li>
-            <li class="chip">Node.js</li>
-            <li class="chip">PostgreSQL</li>
-        </ul>
-        <div class="action-buttons">
-            <a href="#book-a-mentor" title="Book a lector">
-            Book a lector
-            </a>
-            <a href="#learn-more" class="secondary" title="Learn More">
-            Learn More
-            </a>
-        </div>
-        </div>
-    </article>
-  </div>
-`;
-
-
-const template2 = document.createElement("template");
-template2.innerHTML = `
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 <body>
     <div class="container">       
         <div class="card">
@@ -42,7 +10,7 @@ template2.innerHTML = `
                 <img src="assets/profile.jpg" alt="background" />
             </div>
             <div class='content'>
-                <h2>Jason Alexander</h2>
+                <h2>Daniel Lizano</h2>
                 <p>
                     I'm JavaScript full-stack engineer, love working with <em>React</em> and <em>Node.js</em>. 
                 </p>
@@ -115,3 +83,5 @@ class miTarjeta extends HTMLElement {
 }
 
 window.customElements.define("mi-tarjeta", miTarjeta);
+
+

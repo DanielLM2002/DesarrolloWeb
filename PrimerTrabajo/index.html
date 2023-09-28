@@ -3,35 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contador de palabras</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Comentarios adicionales</h1>
-    <textarea rows="10" cols="50"></textarea>
-    <div>
-      <span id="count">0</span> Caracteres digitados.
-      <br />
-      <span id="remaining">230</span> Caracteres restantes.
-    </div>
-    <script>//script de JS para revisar la cantidad de caracteres
-      const textarea = document.querySelector("textarea");
-      const limit = 230;
 
-      textarea.addEventListener("input", () => {
-        const count = textarea.value.length;
-        const remaining = limit - count;
-
-        if (remaining >= 0) {
-          document.querySelector("#count").textContent = count;
-          document.querySelector("#remaining").textContent = remaining;
-        } else {
-          textarea.value = textarea.value.slice(0, limit);
-          document.querySelector("#count").textContent = limit;
-          document.querySelector("#remaining").textContent = 0;
-        }
-      });
-    </script>
-
-    <script>//script de JS para componente vainilla
+    <!-- <script>//script de JS para componente vainilla
       class MiTarjeta {
         constructor(titulo, contenido) {
           this.titulo = titulo;
@@ -81,6 +57,9 @@
         margin: 10px;
         background-color: #f9f9f9;
       }
-    </style>
+    </style> -->
+    <script src ="main.js"></script>
+    <mi-tarjeta titulo="Titulo de la tarjeta" contenido="Contenido de la tarjeta"></mi-tarjeta>
+    
   </body>
 </html>
