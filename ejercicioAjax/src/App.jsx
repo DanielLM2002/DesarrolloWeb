@@ -2,11 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './components/home'
+import Home from './components/home'
 
 function App() {
 
   return (
     <>
+      <Home />
     </>
   )
 }

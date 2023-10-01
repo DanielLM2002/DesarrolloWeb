@@ -4,9 +4,13 @@ import { useEffect } from 'react';
 
 
 const Home = () => {
-  const [select1Value, setSelect1Value] = useState('');
-  const [select2Value, setSelect2Value] = useState('');
-  const [select3Value, setSelect3Value] = useState('');
+  const [select1Value, setSelect1Value] = useState({});
+  const [select2Value, setSelect2Value] = useState({});
+  const [select3Value, setSelect3Value] = useState({});
+  const [provincias, setProvincias] = useState([]);
+  const [cantones, setCantones] = useState([]);
+  const [distritos, setDistritos] = useState([]);
+
 
   const handleSelect1Change = (event) => {
     setSelect1Value(event.target.value);
@@ -24,9 +28,8 @@ const Home = () => {
     try {
       const url = 'provincias.php';
       const { data } = await axiosClient.get(url);
-      return data;
+      setProvincias(data);
     } catch (exception) {
-      console.log(exception);
     }
   };
 
@@ -34,9 +37,8 @@ const Home = () => {
     try {
       const url = `cantones.php?id=${id}`;
       const { data } = await axiosClient.get(url);
-      return data;
+      setCantones(data);
     } catch (exception) {
-      console.log(exception);
     }
   };
 
@@ -44,15 +46,15 @@ const Home = () => {
     try {
       const url = `distritos.php?id=${id}`;
       const { data } = await axiosClient.get(url);
-      console.log("Distritos: ", data);
-      return data;
+      setDistritos(data);
     } catch (exception) {
-      console.log(exception);
     }
   };
 
+  useEffect(() => {}, [])
+
   return (
-    <div>
+  <div>
       <h1>Ejercicio 2</h1>
       <p>C04285</p>
       <form>
