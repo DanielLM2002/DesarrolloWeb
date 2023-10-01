@@ -51,35 +51,36 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {}, [])
+  useEffect(() => fetchProvincias(), [])
 
   return (
   <div>
       <h1>Ejercicio 2</h1>
       <p>C04285</p>
       <form>
-        <label htmlFor="select1">Select 1:</label>
-        <select id="select1" value={select1Value} onChange={handleSelect1Change}>
-          <option value="">Seleccione una opción</option>
-          <option value="opcion1">Opción 1</option>
-          <option value="opcion2">Opción 2</option>
-          <option value="opcion3">Opción 3</option>
+        <label htmlFor="select1">Provincia:</label>
+        <select id="select1" value={select1Value} onChange={handleSelect1Change}>{
+          provincias.map((provincia) => {
+            return <option key={provincia.id} value={provincia.id}>{provincia.name}</option>
+          })
+        }
         </select>
 
-        <label htmlFor="select2">Select 2:</label>
-        <select id="select2" value={select2Value} onChange={handleSelect2Change}>
-          <option value="">Seleccione una opción</option>
-          <option value="opcion4">Opción 4</option>
-          <option value="opcion5">Opción 5</option>
-          <option value="opcion6">Opción 6</option>
+        <label htmlFor="select2">Canton:</label>
+        <select id="select2" value={select2Value} onChange={handleSelect2Change}>{
+          cantones.map((canton) => {
+            return <option key={canton.id} value={canton.id}>{canton.name}</option>
+          })
+        }
         </select>
 
-        <label htmlFor="select3">Select 3:</label>
-        <select id="select3" value={select3Value} onChange={handleSelect3Change}>
+        <label htmlFor="select3">Distrito:</label>
+        <select id="select3" value={select3Value} onChange={handleSelect3Change}>{
+          distritos.map((distrito) => {
+            return <option key={distrito.id} value={distrito.id}>{distrito.name}</option>
+          })
+        }
           <option value="">Seleccione una opción</option>
-          <option value="opcion7">Opción 7</option>
-          <option value="opcion8">Opción 8</option>
-          <option value="opcion9">Opción 9</option>
         </select>
       </form>
     </div>
