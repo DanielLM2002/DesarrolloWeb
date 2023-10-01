@@ -12,16 +12,23 @@ const Home = () => {
   const [distritos, setDistritos] = useState([]);
 
 
-  const handleSelect1Change = (event) => {
-    setSelect1Value(event.target.value);
+  const handleSelect1Change = async(event) => {
+    const provinceSelect = provincias.filter(provincia => provincia.id == event.target.value)[0];
+    setSelect1Value(provinceSelect);
+    console.log(provinceSelect);
+    await fetchCantones(provinceSelect.id);
   };
 
-  const handleSelect2Change = (event) => {
-    setSelect2Value(event.target.value);
+  const handleSelect2Change = async(event) => {
+    const cantonSelect = cantones.filter(canton => canton.id == event.target.value)[0];
+    setSelect2Value(cantonSelect);
+    console.log(cantonSelect);
+    await fetchDistritos(cantonSelect.id);
   };
 
   const handleSelect3Change = (event) => {
-    setSelect3Value(event.target.value);
+    const districtSelect = distritos.filter(distrito => distrito.id == event.target.value)[0];
+    setSelect3Value(districtSelect);
   };
 
   const fetchProvincias = async () => {
@@ -46,12 +53,13 @@ const Home = () => {
     try {
       const url = `distritos.php?id=${id}`;
       const { data } = await axiosClient.get(url);
+      console.log("Distritos: ", data);
       setDistritos(data);
     } catch (exception) {
     }
   };
 
-  useEffect(() => fetchProvincias(), [])
+  useEffect(() =>{fetchProvincias()}, []);
 
   return (
   <div>
@@ -65,7 +73,7 @@ const Home = () => {
           })
         }
         </select>
-
+        <br></br>
         <label htmlFor="select2">Canton:</label>
         <select id="select2" value={select2Value} onChange={handleSelect2Change}>{
           cantones.map((canton) => {
@@ -73,15 +81,15 @@ const Home = () => {
           })
         }
         </select>
-
+        <br></br>
         <label htmlFor="select3">Distrito:</label>
         <select id="select3" value={select3Value} onChange={handleSelect3Change}>{
           distritos.map((distrito) => {
             return <option key={distrito.id} value={distrito.id}>{distrito.name}</option>
           })
         }
-          <option value="">Seleccione una opción</option>
         </select>
+        <br></br>
       </form>
     </div>
   );

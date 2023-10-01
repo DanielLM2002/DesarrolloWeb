@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-  baseURL: './php/'
+  baseURL: './'
 });
 
 export default Axios;
