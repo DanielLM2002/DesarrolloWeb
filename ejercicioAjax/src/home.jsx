@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axiosClient from '../config/Axios';
+import axiosClient from './config/Axios';
 
 const Home = () => {
   const [select1Value, setSelect1Value] = useState('');
@@ -61,7 +61,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen bg-rose-800">
       <h1 className="text-3xl font-bold mb-4">Ejercicio 2</h1>
       <p className="text-lg font-medium mb-8">C04285</p>
       <form className="flex flex-col items-center justify-center">

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './components/home'
-import Home from './components/home'
-
+import './home'
+import Home from './home'
+import './index.css'
 function App() {
 
   return (
