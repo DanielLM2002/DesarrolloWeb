@@ -1,7 +1,7 @@
 import fs from 'fs';
 import http from 'http';
 
-const port = 0;
+const port = 6969;
 const hostname = '0.0.0.0';
 
 const server = http.createServer((req, res) => {
